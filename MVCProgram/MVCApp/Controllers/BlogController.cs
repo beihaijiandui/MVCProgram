@@ -11,8 +11,18 @@ namespace MVCApp.Controllers
         // GET: Blog
         public ActionResult Index()
         {
-            ViewBag.Message("ASP.NET MVC Application!");
+            ViewBag.Message="ASP.NET MVC Application!";
             return View();
+        }
+
+        public ActionResult ShowArticle()
+        {
+            return View("Article");
+        }
+
+        public string Say()
+        {
+            return "Hello World!";
         }
     }
 }
