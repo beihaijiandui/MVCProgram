@@ -1,0 +1,10 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+@model List<WebApiClient.Models.Product>
+    <ul>
+        @foreach (var v in Model)
+        {
+            <li>@v.Id", "@v.Name, @v.Price</li>
+        }
+    </ul>
